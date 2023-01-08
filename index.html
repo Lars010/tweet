@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Tweed Card</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="contenedor">
+      <div class="imagen">
+        <img src="./images/Ellipse1.png" alt="avatar">
+      </div>
+      <div class="tweet">
+        <div class="username">
+          <p>LeonidasEsteban.css</p>
+          <span>@LeonidasEsteban 2h</span>
+        </div>
+        <div class="contenido">
+          <p>Los retos de esta semana de /Proyectos son totalmente gratis, crea una sección de pricing y una galería de
+            fotos <a
+              href="https://leonidasesteban.com/proyectos/cards-precios">https://leonidasesteban.com/proyectos/cards-precios</a>
+            <a
+              href="https://leonidasesteban.com/proyectos/grid-gallery">https://leonidasesteban.com/proyectos/grid-gallery</a>
+            estos los puedes hacer en 100% solo con HTML y CSS.
+          </p>
+        </div>
+
+        <div class="mini-contenedor">
+          <img src="./images/image1.png" alt="imagen">
+          <div class="description">
+            <p>Grig Gallery</p>
+            <p class="on-off">Practica tus habilidades de Grid CSS con este ejercicio de las capitales del mundo.</p>
+            <p class="mobile">leonidasesteban.com</p>
+          </div>
+        </div>
+        <div class="like-button">
+          <div class="heart-bg">
+            <div class="heart-icon"></div>
+          </div>
+          <div class="likes-amount">250</div>
+        </div>
+        <!-- <div class="like-button">
+          <img id="like" class="button sparkles" src="./images/Heard-1.png" alt="like">
+          <p class="likes-amount">250</p> -->
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const heartIcon = document.querySelector(".like-button .heart-icon");
+    const likesAmountLabel = document.querySelector(".like-button .likes-amount");
+
+    let likesAmount = 250;
+
+    heartIcon.addEventListener("click", () => {
+      heartIcon.classList.toggle("liked");
+      if (heartIcon.classList.contains("liked")) {
+        likesAmount++;
+      } else {
+        likesAmount--;
+      }
+
+      likesAmountLabel.innerHTML = likesAmount;
+    });
+  </script>
+
+</body>
+
+</html>
