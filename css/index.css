@@ -185,25 +185,54 @@ p {
   body {
     display: flex;
     justify-content: center;
-    inline-size: 100vw;
-    block-size: 100vh;
-    margin: 0;
+    inline-size: 22.5rem;
+    block-size: 53.06rem;
+    box-sizing: border-box;
   }
 
   .wrapper {
     display: flex;
     align-items: flex-start;
-    inline-size: 100vw;
-    block-size: 100vh;
-   
+    inline-size: 22.5rem;
+    block-size: 53.06rem;
+    box-sizing: border-box;
+  }
+
+  .imagen img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .mini-contenedor img {
+    width: 92px;
+    height: 82.8px;
+  }
+
+  .username {
+    display: block;
+    /* border: 1px solid red; */
+    margin-block-end: .5rem;
+  }
+
+  .username span {
+    margin-inline-start: 0;
+  }
+
+  .username p {
+    font: var(--body2-bold);
   }
 
   .contenedor {
     inline-size: 100%;
-    max-inline-size: 22.5rem;
+    max-inline-size: 25.87rem;
     block-size: 100%;
-    max-block-size: 25.75rem;
-    margin-block-end: 14.24rem;
+    max-block-size: 27rem;
+    margin-block-end: 13.24rem;
+    padding: 1rem;
+  }
+
+  .contenido p {
+   font: var(--body2-regular);
   }
 
   .imagen {
@@ -221,6 +250,7 @@ p {
   .mini-contenedor {
     inline-size: 100%;
     max-inline-size: 16.5rem;
+    block-size: 5.17rem;
   }
 
   .on-off {
@@ -229,6 +259,17 @@ p {
 
   .mobile {
     display: contents;
+    font: var(--body2-regular);
+  }
+
+  .like-button {
+    /* border: 1px solid red; */
+    inline-size: 4.8rem;
+    margin-block-start: 1rem;
+  }
+
+  .description :nth-child(1) {
+    font: var(--body1-bold)
   }
 
 }
