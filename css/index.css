@@ -188,6 +188,7 @@ p {
     inline-size: 22.5rem;
     block-size: 53.06rem;
     box-sizing: border-box;
+    background: var(--bg);
   }
 
   .wrapper {
@@ -233,6 +234,10 @@ p {
 
   .contenido p {
    font: var(--body2-regular);
+  }
+
+  .contenido a {
+    font: var(--body2-regular);
   }
 
   .imagen {
